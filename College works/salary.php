@@ -1,6 +1,6 @@
 <?php
 
-function calculateNetSalary($basic_pay) {
+$basic_pay = 5000;
     // Calculate Dearness Allowance (DA)
     $da = 0.5 * $basic_pay;
     
@@ -25,11 +25,25 @@ function calculateNetSalary($basic_pay) {
     // Calculate Net Salary
     $net_salary = $gross_salary - $deduction;
     
-    return $net_salary;
-}
 
 // Test the function
-$basic_pay = readline("Enter the basic pay in PHP: ");
-$net_salary = calculateNetSalary($basic_pay);
-echo "Net Salary: PHP " . round($net_salary, 2);
+
+
+echo "Dearness allowance is : $da </br>";
+
+echo "Net Salary is : $net_salary</br>";
+
+echo "Provident Fund is : $pf</br>";
+
+echo "Deduction Salary is : $deduction</br>";
+
+echo "Insurance is : $insurance</br>";
+
+echo "Medical Expenditure is : $medical</br>";
+
+echo "House Rent Allowance is : $hra</br>";
+
+echo "Gross Salary is : $gross_salary</br>";
+
+
 ?>
