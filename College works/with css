@@ -15,7 +15,7 @@
         .container {
             background-color: #f2f2f2;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
@@ -24,38 +24,33 @@
     <div class="container">
         <?php
         $basic_pay = 5000;
-        // Calculate Dearness Allowance (DA)
+        
         $da = 0.5 * $basic_pay;
 
-        // Calculate House Rent Allowance (HRA)
         $hra = 0.1 * $basic_pay;
 
-        // Calculate Medical allowance
         $medical = 0.04 * $basic_pay;
 
-        // Calculate Gross Salary
         $gross_salary = $basic_pay + $da + $hra + $medical;
 
-        // Calculate Insurance
         $insurance = 0.07 * $gross_salary;
 
-        // Calculate Provident Fund (PF)
         $pf = 0.05 * $gross_salary;
 
-        // Calculate Deduction
         $deduction = $insurance + $pf;
 
-        // Calculate Net Salary
         $net_salary = $gross_salary - $deduction;
+		echo "<b><p>Basic Salary is : ₹$basic_pay</p></b>";
+        echo "<hr>";
 
-        echo "<p>Dearness allowance is : $da </p>";
-        echo "<p>Net Salary is : $net_salary</p>";
-        echo "<p>Provident Fund is : $pf</p>";
-        echo "<p>Deduction Salary is : $deduction</p>";
-        echo "<p>Insurance is : $insurance</p>";
-        echo "<p>Medical Expenditure is : $medical</p>";
-        echo "<p>House Rent Allowance is : $hra</p>";
-        echo "<p>Gross Salary is : $gross_salary</p>";
+        echo "<p>Dearness allowance is :₹$da </p>";
+        echo "<p>Net Salary is :₹$net_salary</p>";
+        echo "<p>Provident Fund is : ₹$pf</p>";
+        echo "<p>Deduction Salary is : ₹$deduction</p>";
+        echo "<p>Insurance is : ₹$insurance</p>";
+        echo "<p>Medical Expenditure is : ₹$medical</p>";
+        echo "<p>House Rent Allowance is : ₹$hra</p>";
+        echo "<p>Gross Salary is :₹$gross_salary</p>";
         ?>
     </div>
 </body>
