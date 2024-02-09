@@ -20,5 +20,9 @@ echo "division of $a and $b is : $c</br>";
 $c=$a%$b;
 echo "modulo of $a and $b is : $c</br>";
 
+$c=$a**2
+echo "square of $a is $c"
 
+$c=$a**3
+echo "cube of $a is $c"
 ?>
