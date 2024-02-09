@@ -18,6 +18,11 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .container:hover{
+          background-color: #8FBC8F;
+            transition: 1s;
+
+}
     </style>
 </head>
 <body>
@@ -43,14 +48,14 @@
 		echo "<b><p>Basic Salary is : ₹$basic_pay</p></b>";
         echo "<hr>";
 
-        echo "<p>Dearness allowance is :₹$da </p>";
-        echo "<p>Net Salary is :₹$net_salary</p>";
+        echo "<p>Dearness allowance is : ₹$da </p>";
+        echo "<p>Net Salary is : ₹$net_salary</p>";
         echo "<p>Provident Fund is : ₹$pf</p>";
         echo "<p>Deduction Salary is : ₹$deduction</p>";
         echo "<p>Insurance is : ₹$insurance</p>";
         echo "<p>Medical Expenditure is : ₹$medical</p>";
         echo "<p>House Rent Allowance is : ₹$hra</p>";
-        echo "<p>Gross Salary is :₹$gross_salary</p>";
+        echo "<p>Gross Salary is : ₹$gross_salary</p>";
         ?>
     </div>
 </body>
